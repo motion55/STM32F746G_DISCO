@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.24.2">
+  <Languages>
+    <Language Id="GB" />
+  </Languages>
+  <Texts>
+    <TextGroup Id="Group1" />
+    <TextGroup Id="Unsorted">
+      <Text Id="ZAPIS" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">ZAPISZ</Translation>
+      </Text>
+      <Text Id="__SingleUse_LELQ" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">X</Translation>
+      </Text>
+      <Text Id="__SingleUse_WVXR" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">Y</Translation>
+      </Text>
+      <Text Id="__SingleUse_CHM9" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Praca magisterska Piotr Krym</Translation>
+      </Text>
+      <Text Id="__SingleUse_7H5A" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">Pomiar CIE1931</Translation>
+      </Text>
+    </TextGroup>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>
