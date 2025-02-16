@@ -71,6 +71,7 @@ void Error_Handler(void);
 #define MCU_ACTIVE_GPIO_Port GPIOG
 
 /* USER CODE BEGIN Private defines */
+void DoDebugMain(int temp);
 
 /* USER CODE END Private defines */
 
