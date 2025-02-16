@@ -2,259 +2,94 @@
   "Application": {
     "Screens": [
       {
-        "Name": "Screen1",
-        "Includes": "",
+        "Name": "Main",
         "Components": [
           {
-            "Type": "Image",
-            "Name": "image1",
-            "X": 3,
+            "Type": "TiledImage",
+            "Name": "background",
             "Width": 480,
             "Height": 272,
-            "RelativeFilename": "__generated\\dark_theme_images_backgrounds_480x272_blurry_droplets.png"
+            "FileName": "background.png"
           },
           {
-            "Type": "ButtonWithLabel",
-            "Name": "buttonWithLabel1",
-            "X": 153,
-            "Y": 189,
-            "Width": 175,
-            "Height": 50,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_normal.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_normal.png",
-            "TextId": "__SingleUse_7H5A",
-            "ReleasedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "PressedColor": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "TextRotation": "0"
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 95,
-            "Y": 41,
-            "Width": 297,
-            "Height": 24,
-            "TextId": "__SingleUse_CHM9",
-            "TextRotation": "0",
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 480,
+            "Height": 272,
             "Color": {
-              "Red": 255,
-              "Green": 255,
-              "Blue": 255
-            },
-            "AutoSize": true
-          },
-          {
-            "Type": "ScalableImage",
-            "Name": "scalableImage1",
-            "X": 80,
-            "Y": 65,
-            "Width": 320,
-            "Height": 106,
-            "Filename": "smaolot.png",
-            "Alpha": 184,
-            "ScalingAlgorithm": "Nearest-neighbor",
-            "Clickable": true,
-            "Moveable": true
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithLabel1"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionCover",
-              "ScreenTransitionDirection": "East",
-              "ActionComponent": "Screen2"
+              "Red": 8,
+              "Green": 12,
+              "Blue": 128
             }
-          }
-        ],
-        "CustomActions": [
-          {
-            "Name": "action1"
-          }
-        ]
-      },
-      {
-        "Name": "Screen2",
-        "Components": [
-          {
-            "Type": "Image",
-            "Name": "image2",
-            "Width": 480,
-            "Height": 272,
-            "RelativeFilename": "__generated\\alternate_theme_images_backgrounds_480x272_puzzle.png"
           },
           {
-            "Type": "TextArea",
-            "Name": "textArea1_2",
-            "X": 304,
-            "Y": 39,
-            "Width": 7,
-            "Height": 10,
-            "TextId": "__SingleUse_LELQ",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "ImageProgress",
-            "Name": "imageProgress1_2",
-            "X": 320,
+            "Type": "DigitalClock",
+            "Name": "digitalClock",
+            "X": 20,
             "Y": 40,
-            "Width": 100,
-            "Height": 10,
-            "FileNameProgress": "__generated\\alternate_theme_images_widgets_imageprogress_plain_normal_tiny_active.png",
-            "AnchorAtZero": true,
-            "Direction": "Right",
-            "FileNameBackground": "__generated\\alternate_theme_images_widgets_imageprogress_plain_normal_tiny_action.png",
-            "IndicatorPositionWidth": 300,
-            "IndicatorPositionHeight": 10,
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
+            "Width": 150,
+            "Height": 30,
+            "TextColor": {
+              "Red": 247,
+              "Green": 223,
+              "Blue": 223
+            },
+            "TextId": "Digital_clock",
+            "DisplaySeconds": true,
+            "DisplayLeadingZeroForHourIndicator": true,
+            "InitialHour": 10,
+            "InitialMinute": 10
           },
           {
-            "Type": "ButtonWithIcon",
-            "Name": "buttonWithIcon1",
-            "X": 420,
-            "Y": 212,
-            "Width": 60,
-            "Height": 60,
-            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_pressed.png",
-            "Released": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_normal.png",
-            "IconPressed": "__generated\\icon_theme_images_action_account_balance_50_50_E8F6FB.svg.png",
-            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_return_50_50_E8F6FB.svg.png",
-            "IconX": 5,
-            "IconY": 5,
-            "IconHeight": 50,
-            "IconWidth": 50,
-            "Preset": "alternate_theme\\presets\\button\\icon\\round\\tiny_fill_normal.json"
-          },
-          {
-            "Type": "ImageProgress",
-            "Name": "imageProgress1",
-            "X": 320,
-            "Y": 60,
-            "Width": 100,
-            "Height": 10,
-            "FileNameProgress": "__generated\\alternate_theme_images_widgets_imageprogress_plain_normal_tiny_active.png",
-            "AnchorAtZero": true,
-            "Direction": "Right",
-            "FileNameBackground": "__generated\\alternate_theme_images_widgets_imageprogress_plain_normal_tiny_action.png",
-            "IndicatorPositionWidth": 300,
-            "IndicatorPositionHeight": 10,
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
-          },
-          {
-            "Type": "TextArea",
-            "Name": "textArea1",
-            "X": 304,
-            "Y": 59,
-            "Width": 6,
-            "Height": 10,
-            "TextId": "__SingleUse_WVXR",
-            "TextRotation": "0",
-            "AutoSize": true
-          },
-          {
-            "Type": "CustomContainerInstance",
-            "Name": "customContainer11",
-            "Width": 254,
-            "Height": 272,
-            "CustomContainerDefinitionName": "CustomContainer1"
+            "Type": "AnalogClock",
+            "Name": "analogClock",
+            "X": 202,
+            "Y": 15,
+            "Width": 233,
+            "Height": 243,
+            "FileNameBackground": "clocks_backgrounds_clock_classic_background.png",
+            "RotationCenterX": 116,
+            "RotationCenterY": 116,
+            "UseAnimation": true,
+            "Duration": 10,
+            "Easing": "Cubic",
+            "EasingOption": "InOut",
+            "ClockHands": [
+              {
+                "Type": "SecondClockHand",
+                "FileNameHandImage": "clocks_hands_clock_classic_second_hand.png",
+                "RotationCenterX": 4,
+                "RotationCenterY": 79
+              },
+              {
+                "Type": "MinuteClockHand",
+                "FileNameHandImage": "clocks_hands_clock_classic_minute_hand.png",
+                "RotationCenterX": 2,
+                "RotationCenterY": 64
+              },
+              {
+                "Type": "HourClockHand",
+                "FileNameHandImage": "clocks_hands_clock_classic_hour_hand.png",
+                "RotationCenterX": 2,
+                "RotationCenterY": 44,
+                "HourHandMinuteCorrection": true
+              }
+            ],
+            "InitialHour": 10,
+            "InitialMinute": 10
           }
         ],
-        "Interactions": [
-          {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithIcon1"
-            },
-            "Action": {
-              "Type": "ActionGotoScreen",
-              "ScreenTransitionType": "ScreenTransitionCover",
-              "ScreenTransitionDirection": "West",
-              "ActionComponent": "Screen1"
-            }
-          },
-          {
-            "InteractionName": "Interaction2",
-            "Trigger": {
-              "Type": "TriggerClicked",
-              "TriggerComponent": "buttonWithIcon1"
-            },
-            "Action": {
-              "Type": "ActionExecuteCode",
-              "Code": ""
-            }
-          }
-        ]
+        "Interactions": []
       }
     ],
-    "CustomContainerDefinitions": [
-      {
-        "Name": "CustomContainer1",
-        "Width": 254,
-        "Height": 272,
-        "Components": [
-          {
-            "Type": "ScalableImage",
-            "Name": "scalableImage1",
-            "Width": 254,
-            "Height": 272,
-            "Filename": "E0311.png",
-            "ScalingAlgorithm": "Nearest-neighbor",
-            "Clickable": true
-          },
-          {
-            "Type": "RadioButton",
-            "Name": "radioButton1",
-            "X": 84,
-            "Y": 110,
-            "Width": 10,
-            "Height": 10,
-            "FileNameSelected": "__generated\\icon_theme_images_image_circle_10_10_000000.svg.png",
-            "FileNameSelectedPressed": "__generated\\icon_theme_images_image_circle_10_10_000000.svg.png",
-            "FileNameUnselected": "__generated\\icon_theme_images_image_circle_10_10_000000.svg.png",
-            "FileNameUnselectedPressed": "__generated\\icon_theme_images_image_circle_10_10_000000.svg.png",
-            "RadioButtonGroup": "radioButtonGroup1",
-            "Draggable": true
-          }
-        ],
-        "Interactions": [
-          {
-            "InteractionName": "Interaction1",
-            "Trigger": {
-              "Type": "TriggerRadioButtonDeselected",
-              "TriggerComponent": "radioButton1"
-            },
-            "Action": {
-              "Type": "ActionCustom",
-              "FunctionName": "ButtonDeselected1"
-            }
-          }
-        ]
-      }
-    ],
+    "CustomContainerDefinitions": [],
     "Name": "MyApplication",
     "Resolution": {
       "Width": 480,
       "Height": 272
     },
     "SelectedColorDepth": 16,
-    "StartupScreenName": "Screen2",
+    "StartupScreenName": "Main",
     "SelectedStartupLanguage": "GB",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",

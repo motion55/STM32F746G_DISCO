@@ -4,28 +4,13 @@
     <Language Id="GB" />
   </Languages>
   <Texts>
-    <TextGroup Id="Group1" />
-    <TextGroup Id="Unsorted">
-      <Text Id="ZAPIS" Alignment="Center" TypographyId="Small">
-        <Translation Language="GB">ZAPISZ</Translation>
-      </Text>
-      <Text Id="__SingleUse_LELQ" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">X</Translation>
-      </Text>
-      <Text Id="__SingleUse_WVXR" Alignment="Left" TypographyId="Small">
-        <Translation Language="GB">Y</Translation>
-      </Text>
-      <Text Id="__SingleUse_CHM9" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Praca magisterska Piotr Krym</Translation>
-      </Text>
-      <Text Id="__SingleUse_7H5A" Alignment="Center" TypographyId="Small">
-        <Translation Language="GB">Pomiar CIE1931</Translation>
+    <TextGroup Id="Group1">
+      <Text Id="Digital_clock" Alignment="Right" TypographyId="DigitalClock">
+        <Translation Language="GB">&lt;time&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
-    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="DigitalClock" Font="Asap-Regular.ttf" Size="24" Bpp="4" IsVector="no" Direction="LTR" WildcardCharacters="APM :" WidgetWildcardCharacters="0123456789 :APM" WildcardCharacterRanges="0-9" />
   </Typographies>
 </TextDatabase>

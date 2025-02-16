@@ -3,10 +3,4 @@
 FrontendApplication::FrontendApplication(Model& m, FrontendHeap& heap)
     : FrontendApplicationBase(m, heap)
 {
-
-}
-
-void FrontendApplication::ButtonDeselected1(int X, int Y)
-{
-
 }

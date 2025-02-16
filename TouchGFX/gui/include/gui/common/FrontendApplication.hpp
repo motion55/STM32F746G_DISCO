@@ -18,8 +18,6 @@ public:
         model.tick();
         FrontendApplicationBase::handleTickEvent();
     }
-
-    void ButtonDeselected1(int X, int Y);
 private:
 };
 

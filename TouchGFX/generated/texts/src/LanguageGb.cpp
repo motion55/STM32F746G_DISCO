@@ -10,9 +10,5 @@ KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 // Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    44, // T_ZAPIS: "ZAPISZ"
-    51, // T___SINGLEUSE_LELQ: "X"
-    53, // T___SINGLEUSE_WVXR: "Y"
-    0,  // T___SINGLEUSE_CHM9: "Praca magisterska Piotr Krym"
-    29  // T___SINGLEUSE_7H5A: "Pomiar CIE1931"
+    0 // T_DIGITAL_CLOCK: "<>"
 };
